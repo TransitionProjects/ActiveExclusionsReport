@@ -30,7 +30,7 @@ def main():
     writer = pd.ExcelWriter(
         asksaveasfilename(
             title="Save the Recent Exclusion from the Resource Center Report",
-            initialdir=".xlsx",
+            defaultextension=".xlsx",
             initialfile=intial_file_name
         ),
         engine="xlsxwriter"
